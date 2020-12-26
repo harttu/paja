@@ -1,0 +1,111 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>The HTML5 Herald</title>
+  <meta name="description" content="The HTML5 Herald">
+  <meta name="author" content="SitePoint">
+<!--
+  <link rel="stylesheet" !href="css/styles.css?v=1.0"> -->
+<style>
+:root {
+  --main-bg-color:snow;
+  --box-border-color:gold;
+  
+}
+
+body {
+  margin: 40px;
+}
+.wrapper {
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: 33% 33% 33%;
+    background-color:var(--main-bg-color);
+    color: #444;
+}
+  body {
+    background-color:var(--main-bg-color) ;
+  }
+  .box {
+    background-color:blanchedalmond;
+    color: crimson;
+    border-color: var(--box-border-color);
+    /*border-radius: 5px; */
+    padding: 50px; 
+    font-size: 150%;
+  }
+  .a {
+    border: 2px solid var(--box-border-color);
+    background-color:aliceblue;
+    grid-column: 1 / 3;
+    grid-row: 1;
+  }
+  .b {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid var(--box-border-color);
+    font-size: 15rem;
+    background-color:LemonChiffon;
+    grid-column: 3 ;
+    grid-row: 1 / 3;
+  }
+  .c {
+    grid-column: 1 ;
+    border: 2px solid var(--box-border-color);
+    background-color: cornsilk;
+    grid-row: 2 ;
+  }
+  .d {
+    border: 2px solid var(--box-border-color);
+    background-color: LightCyan;
+    grid-column: 2;
+    grid-row: 2;
+  }
+  .e {
+    border: 2px solid var(--box-border-color);
+    background-color: LightCyan;
+    grid-column: 1 / 3;
+    grid-row: 3;
+  }
+  .f {
+    border: 2px solid var(--box-border-color);
+    background-color: LightCyan;
+    grid-column: 1;
+    grid-row: 4;
+  }
+  .g {
+    border: 2px solid var(--box-border-color);
+    background-color: LightCyan;
+    grid-column: 2;
+    grid-row: 4;
+  }
+  .h {
+    border: 2px solid var(--box-border-color);
+    background-color: LightCyan;
+    grid-column: 3;
+    grid-row: 4;
+  }
+
+
+</style>
+</head>
+<body>
+    <div class="wrapper">
+            <div class="box a">A</div>
+            <div class="box b">&#x42f;</div>
+            <div class="box c">C</div>
+            <div class="box d">D</div>
+            <div class="box e">E</div>
+            <div class="box f">F</div>
+            <div class="box g">G</div>
+            <div class="box h">H</div>
+
+          </div>
+  <script src="js/scripts.js"></script>
+</body>
+</html>
